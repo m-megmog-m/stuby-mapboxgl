@@ -1,3 +1,7 @@
+import mapboxgl from 'mapbox-gl';
+import 'mapbox-gl/dist/mapbox-gl.css'
+import 'css/style.css';
+
 const map = new mapboxgl.Map({
   container: "map",
   style: {
