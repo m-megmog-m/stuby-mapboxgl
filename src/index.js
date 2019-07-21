@@ -47,5 +47,11 @@ map.on('load', () => {
   selectLayer('m_mono')
 });
 
-const nc = new mapboxgl.NavigationControl();
-map.addControl(nc, 'top-left');
+const navigator = new mapboxgl.NavigationControl();
+map.addControl(navigator, 'top-left');
+
+const scaler = new mapboxgl.ScaleControl({
+  maxwidth: 300,
+  unit: 'metric'
+});
+map.addControl(scaler);
